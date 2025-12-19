@@ -1,0 +1,85 @@
+/* hero.css */
+.hero {
+  padding: 90px 0;
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #fff, #fbfdff);
+}
+.hero-inner {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+.hero-left {
+  flex: 1;
+}
+.hero-right {
+  width: 300px;
+}
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 8px;
+}
+.accent {
+  color: #1fb6ff;
+}
+.lead {
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+.ctas {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+.btn {
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #1fb6ff;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: #111;
+}
+.profile-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: linear-gradient(180deg, #fff, #f1f9ff);
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(31, 182, 255, 0.06);
+}
+.profile-card img {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.profile-info h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.profile-info p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .hero-inner {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .hero-right {
+    width: 220px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,29 @@
+/* global.css - base & shared tokens */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --accent: #1fb6ff;
+  --muted: #6b7280;
+  --container: 1100px;
+}
+
+* { box-sizing: border-box; }
+html,body,#root { height: 100%; }
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  color: #0b1320;
+  background: #f7f9fb;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 20px; }
+
+a { color: inherit; }
+
+/* utility */
+.section-title { font-size: 1.4rem; color: #0b1320; }
+
+/* buttons small helpers used across css */
+.btn { display:inline-block; padding:10px 14px; border-radius:10px; background:var(--accent); color:white; text-decoration:none; font-weight:600; border:0; cursor:pointer; }

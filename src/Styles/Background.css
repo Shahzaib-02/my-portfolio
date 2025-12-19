@@ -1,0 +1,31 @@
+/* Background Effects */
+.particle-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.particle-canvas.hide { display: none; }
+
+.floating-blobs .blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.25;
+  animation: float 6s ease-in-out infinite;
+}
+.blob.b1 { width: 120px; height: 120px; background: var(--accent); top: 15%; left: 10%; }
+.blob.b2 { width: 80px; height: 80px; background: var(--accent); bottom: 20%; right: 15%; }
+.blob.b3 { width: 100px; height: 100px; background: var(--accent); top: 50%; left: 80%; transform: translate(-50%, -50%); }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.about-section {
+  position: relative; /* zaroori hai background ko andar lock karne ke liye */
+  z-index: 1;
+}
+.card { z-index: 2; position: relative; }

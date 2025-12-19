@@ -1,0 +1,198 @@
+/* === ABOUT SECTION === */
+.about-section {
+  padding: 5rem 10%;
+  background: var(--bg);
+  color: var(--text);
+  display: grid;
+  gap: 3rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* === INTRO === */
+.intro-section {
+  text-align: center;
+}
+
+.intro-text {
+  margin: 1rem 0 2rem;
+  line-height: 1.6;
+}
+
+.highlight {
+  color:rgb(39, 162, 212);
+  font-weight: 700;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.social-links a {
+  color: var(--text);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}
+
+/* === SKILLS === */
+.skills-section h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: rgb(39, 162, 212);
+}
+
+.skill {
+  margin-bottom: 1.2rem;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.progress {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 14px;
+}
+
+.progress-fill {
+  background:  var(--accent);
+  height: 100%;
+  border-radius: 10px;
+  text-align: right;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding-right: 5px;
+  color: #fff;
+
+  /* smooth animation */
+  width: 0;
+  transition: width 1.5s ease-in-out;
+}
+.fa{
+color: rgb(39, 162, 212);
+font-size: 2rem;
+}
+.fa:hover{
+transform: translateY(-10px);
+transition: all ease 0.4s;
+
+}
+/* === EXPERIENCE TIMELINE === */
+.experience-section h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+  color: rgb(39, 162, 212);
+}
+
+.timeline {
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid var(--accent);
+}
+
+.timeline-item {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background: var(--accent);
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.timeline-content {
+  margin-left: 1rem;
+}
+
+.timeline-content h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.timeline-content span {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+/* === WHAT I LOVE === */
+.love-section h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color:rgb(39, 162, 212) ;
+}
+h2{
+    margin-bottom: 1.5rem;
+  text-align: center;
+  color:rgb(39, 162, 212) ;
+}
+.love-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.love-item {
+  padding: 1.5rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.love-item:hover {
+  transform: translateY(-6px);
+  background: var(--accent);
+  color: white;
+}
+
+.love-item i {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+}
+
+.love-item p {
+  font-weight: 500;
+}
+
+/* === DARK/LIGHT MODE VARIABLES === */
+/* :root {
+ 
+ 
+  --accent-skills:rgb(39, 162, 212);
+}
+
+[data-theme="dark"] {
+  --bg: #0e0e0e;
+  --text: #f9f9f9;
+  --accent: rgb(39, 162, 212);;
+  --accent-skills: rgb(39, 162, 212);} */
